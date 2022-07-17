@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+ }
+
+body{
+    font-size: 15px;
+    /* box-sizing: border-box;    */
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* tudo deve ficar assim */
+body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+  }
+  
+  p {
+    color: hsl(234, 12%, 34%);
+    font-size: 15px;
+  }
+  
+  /* no nosso topo */
+  .topo {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  span {
+    font-weight: 200;
+  }
+  
+  .dentro_topo {
+    width: 50%;
+    margin: 0 auto 30px;
+  }
+  
+  /* no nosso cards */
+  @media screen and (min-width:800px){
+  
+    .cards {
+      display: flex;
+      justify-content: center;
+      
+    }
+  
+    .coluna {
+      padding: 37px;
+      flex:2;
+     
+    }
+    .coluna:nth-of-type(1){
+      display: flex;
+      align-items: center;
+    }
+    .coluna:nth-of-type(3){
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  
+  .card {
+    width:350px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px 30px;
+    padding-bottom: 120px;
+    box-shadow: 4px 4px 14px hsl(229, 6%, 66%);
+    
+  }
+  
+  .cad1 {
+    border-top: 6px solid hsl(180, 62%, 55%);
+  }
+  
+  .cad2 {
+    border-top: 6px solid hsl(0, 78%, 62%);
+  }
+  
+  .cad3 {
+    border-top: 6px solid hsl(34, 97%, 64%);
+  }
+  
+  .cad4 {
+    border-top: 6px solid hsl(212, 86%, 64%);
+  }
+  
+  img {
+    float: right;
+    padding-top: 20px;
+  }
+  
+  /* no nosso media query */
+  @media (max-width:800px){
+  .cards{
+    position: absolute; left:50%; top:30%; transform:translate(-50%,-50%);
+    margin-top: 600px;
+  }
+  footer{
+    position: relative;
+    margin-top: 1200px;
+  }
+  
+  }
